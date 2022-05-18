@@ -1,6 +1,9 @@
 ﻿Console.WriteLine("Tof!");
 
-static int Optellen(int getal1, int getal2)
+public static class Extensions
 {
-    return getal1 + getal2;
-}
+    static void Optellen(ref this int getal1, int getal2)
+    {
+        getal1 += getal2;
+    }
+} 
