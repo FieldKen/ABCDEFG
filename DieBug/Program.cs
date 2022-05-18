@@ -1,6 +1,9 @@
 ﻿Console.WriteLine("Tof!");
 
-static int Optellen(params int[] getallen)
+public static class Extensions
 {
-    return getallen.Sum(x => x);
+    static void Optellen(ref this int getal1, int getal2)
+    {
+        getal1 += getal2;
+    }
 }
